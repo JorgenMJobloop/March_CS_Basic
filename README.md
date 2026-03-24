@@ -2,7 +2,6 @@
 
 ## C# Basic
 
-
 ### Introduction
     - Datatypes (primitive)
     - Variables
@@ -11,3 +10,6 @@
         * List (dynamic-size)
         * Dictionary (key-value pairing)
     - Condtions & Loops/Iterations (over a data structure)
+
+### Graphics
+![Image that visualizes a class ](image.png)
