@@ -46,4 +46,27 @@ public class Person
     {
         return Age;
     }
+
+    public int NewGetAge() => Age;
+
+    public int OldSwitchValidAge(int age)
+    {
+        switch (age)
+        {
+            case -1:
+                Console.WriteLine("Cannot be less than 0 years old");
+                break;
+            case 125:
+                Console.WriteLine("Cannot be older than 125");
+                break;
+        }
+        return age;
+    }
+
+    public int ValidAge(int age) => age switch
+    {
+        0 => age > 0 ? 0 : throw new Exception(),
+        125 => age <= 125 ? age : throw new Exception(),
+        _ => age
+    };
 }
