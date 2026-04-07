@@ -123,6 +123,14 @@ class Program
 
         calculator.PrintXandY();
 
+        sum = calculator.DivideNumbers(10, 5);
+        Console.WriteLine(sum);
+
+        Console.WriteLine($"2^9 = {calculator.GetPower(2, 9)}");
+
+        var renderer = new AsciiRenderer(25, 10, ' ');
+        DrawShapes.DrawA(renderer, startX: 10, startY: 1, height: 5, c: '*');
+        renderer.RenderCharacters();
 
         /*
             Explicit type casting/assignment
